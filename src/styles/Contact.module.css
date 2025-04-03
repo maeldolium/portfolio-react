@@ -1,0 +1,35 @@
+/* Styles section Contact */
+.contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Liens */
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #1a202c;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.socialLinks a:hover {
+    background-color: #00bcd4;
+    transform: scale(1.1);
+}
+
+.icon {
+    color: white;
+}

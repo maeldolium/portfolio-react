@@ -1,0 +1,22 @@
+/* Styles du footer */
+.footer {
+    background-color: #1a202c;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.socialLinks {
+    margin-top: 0.5rem;
+}
+
+.socialLinks a {
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.socialLinks a:hover {
+    color: #00bcd4;
+}
