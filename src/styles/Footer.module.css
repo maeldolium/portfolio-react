@@ -4,19 +4,37 @@
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
 }
 
 .socialLinks {
     margin-top: 0.5rem;
 }
 
+/* Liens sociaux */
 .socialLinks a {
     margin: 0 10px;
     color: white;
     transition: color 0.3s;
 }
 
+/* Hover sur les liens sociaux */
 .socialLinks a:hover {
     color: #00bcd4;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .socialLinks {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .socialLinks a {
+        font-size: 1.5rem;  /* Augmenter la taille des icônes pour les petits écrans */
+    }
 }

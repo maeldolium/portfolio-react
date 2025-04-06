@@ -2,30 +2,40 @@
 .skills {
     text-align: center;
     padding: 50px 20px;
-    background-color: #2d3748;
+    background-color: #232b38;
     color: white;
-}
-
-/* Titre */
-h2 {
+  }
+  
+  /* Titre */
+  .skills h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-
-/* Grille des compétences */
-.skillsGrid {
+  }
+  
+  /* Carousel de compétences */
+  .slick-slider {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  /* Assurer que toutes les images ont une taille uniforme */
+.skillCard .skill-icon {
+    object-fit: contain; /* Pour conserver les proportions de l'image */
+    margin: 0 auto; /* Centrer l'image horizontalement */
+    display: block; /* S'assurer que l'image n'est pas en ligne */
 }
 
-/* Carte de compétence */
+/* Mise en forme générale des icônes dans les cartes de compétences */
 .skillCard {
     background: #1a202c;
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 10px;
-    width: 120px;
+    width: 100%; /* S'adapte à la largeur de son parent */
+    max-width: 250px; /* Mais ne dépasse pas 150px de largeur */
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
@@ -35,7 +45,46 @@ h2 {
     transform: scale(1.1);
 }
 
-/* Icône */
-.icon {
+/* Assurer que les autres icônes restent cohérentes */
+.skillCard .icon {
     font-size: 2rem;
+    margin: 0 auto; /* Centrer l'icône */
 }
+
+  
+  /* Assure que les images ont la même taille */
+.icon img {
+    object-fit: contain; /* Pour que l'image conserve ses proportions */
+    display: block; /* Éviter les comportements de ligne */
+    margin: 0 auto; /* Centrer l'image horizontalement */
+  }
+  
+  /* Icônes déjà centrées dans le conteneur */
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Taille des autres icônes */
+  }
+  
+  
+  /* Pour s'assurer que les cartes ne se chevauchent pas */
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Responsivité */
+  @media (max-width: 1024px) {
+    .skillCard {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skillCard {
+      width: 50px;
+    }
+  }
+  

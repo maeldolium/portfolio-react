@@ -1,12 +1,12 @@
 /* Styles de la Navbar */
 .navbar {
-  background-color: #1a202c;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+    background-color: #1a202c;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 /* Liste des liens */
@@ -15,6 +15,8 @@
     justify-content: center;
     list-style: none;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .navList li a {
@@ -25,4 +27,52 @@
 
 .navList li a:hover {
     color: #00bcd4;
+}
+
+.navList li a.active {
+    border-bottom: 2px solid #00bcd4;
+}
+
+/* Navbar Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    /* Menu burger */
+    .menuIcon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin-left: auto;  /* Pousse le menu burger vers la droite */
+    }
+
+    /* Les trois lignes du menu burger */
+    .burger {
+        height: 4px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    /* Empiler les éléments de la navbar verticalement sur petits écrans */
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        display: none;  /* Masquer le menu par défaut */
+        /* width: 100%; */
+    }
+
+    .navList.open {
+        display: flex;  /* Afficher le menu quand il est ouvert */
+    }
+
+    /* Ajuster la taille des liens */
+    .navList li a {
+        font-size: 1.5rem;
+    }
 }

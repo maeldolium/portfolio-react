@@ -2,16 +2,26 @@
 .contact {
     padding: 4rem 2rem;
     text-align: center;
+    background-color: #2d3748;
+    color: white;
 }
 
-/* Liens */
+/* Titre */
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Liens sociaux */
 .socialLinks {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 1.5rem;
+    flex-wrap: wrap;  /* Ajout pour permettre l'empilement sur petits écrans */
 }
 
+/* Style des liens sociaux */
 .socialLinks a {
     display: flex;
     align-items: center;
@@ -23,13 +33,53 @@
     padding: 1rem 1.5rem;
     border-radius: 8px;
     transition: background 0.3s ease-in-out, transform 0.2s;
+    max-width: 250px;  /* Limiter la largeur des liens */
+    justify-content: center;  /* Centrer le texte et les icônes */
 }
 
+/* Hover sur les liens sociaux */
 .socialLinks a:hover {
     background-color: #00bcd4;
     transform: scale(1.1);
 }
 
+/* Icônes */
 .icon {
     color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .socialLinks {
+        gap: 1.5rem;
+    }
+
+    .socialLinks a {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;  /* Réduire le padding pour les petits écrans */
+        max-width: 200px;  /* Réduire la largeur des liens pour les petits écrans */
+    }
+
+    .socialLinks a:hover {
+        transform: scale(1);  /* Désactiver l'agrandissement sur hover pour éviter un effet trop important */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .socialLinks {
+        gap: 1rem;
+    }
+
+    .socialLinks a {
+        font-size: 0.9rem;
+        padding: 0.7rem 0.8rem;  /* Réduire encore plus pour les très petits écrans */
+    }
 }

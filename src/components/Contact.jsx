@@ -9,7 +9,7 @@ export default function Contact() {
                 <a href="https://github.com/maeldolium" target='_blank' rel='noopener noreferrer'>
                     <FaGithub size={40} className={styles.icon} /> GitHub
                 </a>
-                <a href="" target='_blank' rel='noopener noreferrer'>
+                <a href="https://www.linkedin.com/in/ma%C3%ABl-dolium-455b44285/" target='_blank' rel='noopener noreferrer'>
                     <FaLinkedin size={40} className={styles.icon} /> LinkedIn
                 </a>
                 <a href="mailto:maeldolium@gmail.com">
