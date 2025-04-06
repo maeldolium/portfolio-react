@@ -9,36 +9,36 @@ const projects = [
     title: "Portfolio",
     description: "Mon portfolio personnel réalisé avec React.",
     technologies: ["React", "CSS Modules"],
-    image: "public/assets/portfolio.png",
+    image: "/assets/portfolio.png",
     link: "https://github.com/ton-github/portfolio",
   },
   {
     title: "GymTech",
     description: "Un site internet réalisé dans le cadre d'un projet de 150h en BTS CIEL.",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    image: "public/assets/Gymtech.png",
+    image: "/assets/GymTech.png",
     link: "https://github.com/maeldolium/gymtech",
   },
   {
     title: "Quiz Project",
     description: "Un projet de quiz en ligne sur les langages de développement Web.",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    image: "public/assets/Quiz_project.png",
+    image: "/assets/Quiz_project.png",
     link: "https://github.com/maeldolium/quiz_project",
   },
   {
     title: "Morpion",
     description: "Un jeu de morpion à deux joueurs ou contre un bot.",
     technologies: ["C++"],
-    image: "public/assets/morpion.png",
-    link: ""
+    image: "/assets/morpion.png",
+    link: "https://github.com/maeldolium/morpion"
   },
   {
     title: "Pierre-feuille-ciseaux",
     description: "Un jeu de pierre-feuille-ciseaux contre un bot.",
     technologies: ["Python"],
-    image: "public/assets/pierre-feuille-ciseaux.png",
-    link: ""
+    image: "/assets/pierre-feuille-ciseaux.png",
+    link: "https://github.com/maeldolium/pierre-feuille-ciseaux"
 }
 ];
 
