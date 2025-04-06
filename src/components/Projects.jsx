@@ -10,7 +10,7 @@ const projects = [
     description: "Mon portfolio personnel réalisé avec React.",
     technologies: ["React", "CSS Modules"],
     image: "/assets/portfolio.png",
-    link: "https://github.com/ton-github/portfolio-react",
+    link: "https://github.com/maeldolium/portfolio-react",
   },
   {
     title: "GymTech",
