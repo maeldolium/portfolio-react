@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to right, #1a202c, #2d3748);
+    background: linear-gradient(to right, #1a202c, #232b38);
     color: white;
 }
 
@@ -42,4 +42,5 @@ p {
 
 .cta:hover {
     background-color: #008ba3;
+    color: white;
 }
