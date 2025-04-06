@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <p>© {new Date().getFullYear()} Ton Nom. Tous droits réservés.</p>
+            <p>© {new Date().getFullYear()} Maël DOLIUM. Tous droits réservés.</p>
             <div className={styles.socialLinks}>
                 <a href="https://github.com/maeldolium" target="_blank" rel="noopener noreferrer">
                     <FaGithub size={30} />
